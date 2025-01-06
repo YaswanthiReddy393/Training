@@ -1,0 +1,56 @@
+Question**--- Give me some idea on what is a Data type. What are Primitive Data types and Non-Primitive Data types. Explain with some examples.
+
+ANS:  
+    DataType:-This is used to define what kind of data used in variable. Here in the Javascript we no need to specify the datatype while declaring the variable and initialising the value.
+    we have to types of datatypes. They are, 1.Primitive DataType
+                                             2.Non-Primitive DataType
+    **NOTE** -- We use typeof() method to know the type of datatype.
+
+    1.Primitive DataType: These datatypes are immutable. They can store single value.
+    let use see the types,
+        1.Number:- Integers,decimal values,Exponential etc... comes under this. They range between -2^53 to +2^53 + 1.
+            Example: let num = 3.54
+        2.String:- The sequence on characters stored in double quotes or Single quotes or back ticks.
+            Example: const s1 = "Yashwanthi"
+                     let s2 = 'Reddy'
+                     var s3 = `Nandyala`
+        3.Boolean:- These are used in the decision making statments. They are either True or False.
+            Example: let bool1 = True;
+                     var bool2 = False;
+        4.Null:- It is a absence of object or emptyspace. But when we check the type of Data it shows us object.
+            Example: let a = null
+        5.Undefined:- Here the variable is decalred but it is not initialised with value.
+            example: let b;
+    2.Non-Primitive DataType: These are mutable which means we can change the value which is initialised.  They can store multiple values. 
+    let us see the types,
+        1.Class
+        2.Object
+        3.Array
+        4.Function
+        5.Math,data,json
+
+  Now let use see an example program for primitive datatypes
+  Program:-
+        const str1 = "Yashwanthi"
+        let str2 = 'Reddy'
+        var str3 = `Nandyala`
+        console.log(str1, str2, str3);
+
+        const num1 = 19
+        let num2 = 12.89
+        var num3 = 10e5
+        console.log(num1, num2, num3);
+
+        const bool1 = true
+        var bool2 = false
+        console.log(bool1, bool2, typeof(bool1, bool2));
+
+        let a
+        console.log(a, typeof(a));
+
+        let b = null;
+        console.log(b, typeof(b));
+
+
+
+
