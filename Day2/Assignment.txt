@@ -1,7 +1,8 @@
 Question**--- Give me some idea on what is a Data type. What are Primitive Data types and Non-Primitive Data types. Explain with some examples.
 
 ANS:  
-    DataType:-This is used to define what kind of data used in variable. Here in the Javascript we no need to specify the datatype while declaring the variable and initialising the value.
+    DataType:-This is used to define what kind of data used in variable. Here in the Javascript we no need 
+    to specify the datatype while declaring the variable and initialising the value.
     we have to types of datatypes. They are, 1.Primitive DataType
                                              2.Non-Primitive DataType
     **NOTE** -- We use typeof() method to know the type of datatype.
