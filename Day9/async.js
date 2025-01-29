@@ -29,32 +29,39 @@
 
 //!API Fetchingg
 
-function fetchusers (){
-    let response = fetch("https://jsonplaceholder.typicode.com/users");
-    // console.log(response);
-    response.then(res => {
-        //  console.log(res);
-        // console.log(res.json);
-        return res.json().then(data=>{
-            // console.log(data);
-            let store = document.getElementById("store")
-            data.map(user=>{
-                console.log(user);
-                store.innerHTML += `
-                <tr>
-                <td>${user.id}</td>
-                <td>${user.name}</td>
-                <td>${user.email}</td>
-                <td>${user.company.name}</td>
-                </tr>
-                `
-            })
+// function fetchusers (){
+//     let response = fetch("https://jsonplaceholder.typicode.com/users");
+//     // console.log(response);
+//     response.then(res => {
+//         //  console.log(res);
+//         // console.log(res.json);
+//         return res.json().then(data=>{
+//             // console.log(data);
+//             let store = document.getElementById("store")
+//             data.map(user=>{
+//                 console.log(user);
+//                 store.innerHTML += `
+//                 <tr>
+//                 <td>${user.id}</td>
+//                 <td>${user.name}</td>
+//                 <td>${user.email}</td>
+//                 <td>${user.company.name}</td>
+//                 </tr>
+//                 `
+//             })
             
-        })
+//         })
         
-    })
-    .catch(err=>console.log(err))
+//     })
+//     .catch(err=>console.log(err))
+    
+// }
+// fetchusers();
+
+async function demo(){
+    let response = await fetch("https://jsonplaceholder.typicode.com/users");
+    let data = await response.json();
+    console.log(data);
     
 }
-fetchusers();
-
+demo();
